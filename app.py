@@ -13,3 +13,23 @@ except:
     # a catch all wether error or not
 finally:
     print('okie dokie')
+
+
+
+def user_input():
+    user_input = input("pick a number: ")
+    try:    
+        user_input = float(user_input)
+    except:
+        print('try again')
+    return user_input
+
+result = user_input()
+result2 = user_input()
+
+try:
+    result3 = result + result2
+except:
+    print('Try Again')
+
+print(result3)
